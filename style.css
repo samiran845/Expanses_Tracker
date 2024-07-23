@@ -13,7 +13,7 @@ body {
 
 .add_transation {
     width: 80%;
-    height: 90vh;
+    height: 900px;
 
     background-color: tomato;
 
@@ -37,27 +37,28 @@ body {
     justify-content: space-around;
     text-align: center;
 
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 
 }
 
 .top_section h2 {
+    font-size: 45px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .cross {
     font-family: sans-serif;
-    font-size: 40px;
+    font-size: 60px;
 
     position: absolute;
     top: 20px;
     right: 20px;
 
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background-color: wheat;
     text-align: center;
-    line-height: 43px;
+    line-height: 70px;
     border-radius: 50%;
 
     border: 3px solid white;
@@ -74,7 +75,7 @@ body {
     padding: 10px;
     /* background-color: red; */
 
-    font-size: 20px;
+    font-size: 30px;
 
     font-weight: bolder;
 
@@ -82,14 +83,14 @@ body {
 }
 
 .type {
-    font-size: 18px;
+    font-size: 30px;
     padding: 7px;
     border-radius: 10px;
 
     background-color: transparent;
     border: 3px solid white;
     font-weight: bold;
-    width: 200px;
+    width: 350px;
 
 
 }
@@ -104,7 +105,7 @@ body {
 
 .submit {
     width: 80%;
-    font-size: 18px;
+    font-size: 30px;
     padding: 10px;
 
     border-radius: 20px;
@@ -112,4 +113,7 @@ body {
     background-color: rgb(127, 168, 255);
 
     cursor: pointer;
+
+    position: absolute;
+    bottom: 60px;
 }
