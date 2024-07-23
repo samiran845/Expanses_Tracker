@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expanses Traker</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="add_transation">
+        <div class="top_section">
+            <h2>Transation Add +</h2>
+        </div>
+        <div class="cross">x</div>
+
+        <div class="form_container">
+
+            <div class="card">
+                <label>Type</label>
+                <select name="Type" class="type">
+                    <option value="Expenses">Expenses</option>
+                    <option value="Income">Income</option>
+                    <option value="Transfer">Transfer</option>
+                    <option value="ATM_withdrawal">ATM Withdrawal</option>
+                    <option value="Cash_received">Cash Received</option>
+                    <option value="Cashback">Cashback</option>
+                    <option value="Refund">Refund</option>
+                </select>    
+            </div>
+            <div class="card">
+                <label>Cradit A/c</label>
+                <select name="Debit" class="type">
+                    <option value="Cash">Cash</option>
+                    <option value="HDFC_Bank">HDFC Bank</option>
+                    <option value="HDFC_Cradit_Card">HDFC Cradit Card</option>
+                    <option value="PUNB_Bank">PUNB Bank</option>
+                    <option value="Airtel_Bank">Airtel Bank</option>
+                </select>
+            </div>
+            <div class="card">
+                <label>Debit A/c</label>
+                <select name="Debit" class="type">
+                    <option value="Cash">Cash</option>
+                    <option value="HDFC_Bank">HDFC Bank</option>
+                    <option value="HDFC_Cradit_Card">HDFC Cradit Card</option>
+                    <option value="PUNB_Bank">PUNB Bank</option>
+                    <option value="Airtel_Bank">Airtel Bank</option>
+                </select>
+            </div>
+
+            <div class="card">
+                <label>Category</label>
+                <select name="Exp_type" class="type">
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Groceries">Groceries</option>
+                    <option value="Education">Education</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Health">Health</option>
+                    <option value="EMI">EMI</option>
+                    <option value="Gadgets">Gadgets</option>
+                    <option value="Kids">Kids</option>
+                    <option value="Investment">Investment</option>
+                    <option value="Home">Home</option>
+                    <option value="Intertentment">Intertentment</option>
+                </select>
+            </div>
+
+            <div class="card">
+                <label>Description</label>
+                <textarea name="description" class="type"></textarea>
+            </div>
+
+            <div class="card">
+                <label>Date</label>
+                <input type="date" name="date" class="type">
+            </div>
+            
+            <div class="card">
+                <label>Amount</label>
+                <input type="number" name="amount" class="type">
+            </div>
+
+        </div>
+
+        <div class="bottom_section">
+            <input type="submit" class="submit">
+        </div>
+
+    </div>
+    <!-- <form id="testForm" method="post">   
+        <input type="text" name="name" placeholder="Name" >
+        <input type="text" name="age" placeholder="age" >
+        <input type="text" name="gender" placeholder="gender" >
+        <button type="submit">Submit</button>
+    </form> -->
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
