@@ -124,6 +124,10 @@ body {
 
 }
 
+.cradit_account {
+    display: none;
+}
+
 .bottom_section {
     display: flex;
     justify-content: center;

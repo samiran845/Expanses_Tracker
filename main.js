@@ -1,5 +1,9 @@
 const addBtn = document.querySelector(".add_btn")
 const crossBtn = document.querySelector(".cross")
+const cards = document.querySelectorAll(".card")
+const type = document.querySelector(".expenses_type")
+// console.log(cards)
+
 
 
 addBtn.addEventListener("click", (e)=>{
@@ -14,7 +18,50 @@ crossBtn.addEventListener("click", (e)=>{
 })
 
 
+const craditAccount = document.querySelector(".cradit_account")
+const debitAccount = document.querySelector(".debit_account")
+const category = document.querySelector(".category")
+const description = document.querySelector(".description")
+const date = document.querySelector(".date")
+const amount = document.querySelector(".amount")
 
+type.addEventListener("change", (e)=>{
+    transationType = e.target.value
+    
+    if(transationType == "Expenses"){
+        craditAccount.style.display = "none"
+    }
+    if(transationType == "Income"){
+        craditAccount.style.display = "flex"
+        debitAccount.style.display = "none"
+        category.style.display = "none"
+    }
+    if(transationType == "Transfer"){
+        craditAccount.style.display = "flex"
+        debitAccount.style.display = "flex"
+        category.style.display = "none"
+    }
+    if(transationType == "ATM_withdrawal"){
+        craditAccount.style.display = "none"
+        debitAccount.style.display = "flex"
+        category.style.display = "none"
+    }
+    if(transationType == "Cash_received"){
+        craditAccount.style.display = "flex"
+        debitAccount.style.display = "none"
+        category.style.display = "none"
+    }
+    if(transationType == "Cashback"){
+        craditAccount.style.display = "flex"
+        debitAccount.style.display = "none"
+        category.style.display = "none"
+    }
+    if(transationType == "Refund"){
+        craditAccount.style.display = "flex"
+        debitAccount.style.display = "none"
+        category.style.display = "none"
+    }
+})
 
 
 
