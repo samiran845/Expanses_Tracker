@@ -11,6 +11,7 @@ const category = document.querySelector(".category")
 const description = document.querySelector(".description")
 const date = document.querySelector(".date")
 const amount = document.querySelector(".amount")
+const status = document.querySelector(".status")
 
 
 
@@ -87,6 +88,9 @@ function dataCreation(){
     data.description = description.querySelector(".type").value
     data.date = date.querySelector(".type").value
     data.amount = amount.querySelector(".type").value
+    data.status = status.querySelector(".type").value
+
+    console.log(data)
 
     return data
 }
@@ -164,7 +168,7 @@ submit.addEventListener("click",()=>{
 
     let action = "add_transation"
     
-    let url = `https://script.google.com/macros/s/AKfycbxaSITIxLe2qItIx-6bdDCyu_6Q3UDVE-S9jYEJju6oaoh7xsWL6OIbhZ4mEagIzJ3M/exec?action=${action}`
+    let url = `https://script.google.com/macros/s/AKfycbwgLpsOrSEGKaagwL1XyCM-fqikVh2GcIGCRqU646EmY_Q9Nbc1lFWvmPLUx3Dqor_w/exec?action=${action}`
 
 
     fetch(url, {
